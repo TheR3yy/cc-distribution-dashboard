@@ -199,7 +199,7 @@ footer{margin-top:30px; font-size:11.5px; color:var(--text-muted); text-align:ce
     </details>
   </div>
 
-  <footer>C&amp;C Distribution internal dashboard · reconciled from 9 finance extracts, 2021–2024 · built for an executive/GM view</footer>
+  <footer>C&amp;C Distribution internal dashboard · reconciled from 9 finance extracts, 2021–2024 · built for an executive/GM view · made by Dmitrijs Pavlovs</footer>
 </div>
 <div class="tooltip" id="tooltip"></div>
 
@@ -596,7 +596,7 @@ function renderFamily(rows){
     svg.appendChild(rect);
     const vt = svgEl('text',{x:pad.l+bw+8,y:y+rowH/2+4});
     vt.setAttribute('class', marginPct<0 ? 'bar-label neg' : 'bar-label');
-    vt.textContent = fmtPct(marginPct)+' margin';
+    vt.textContent = fmtPct(marginPct)+' margin of revenue';
     svg.appendChild(vt);
   });
   el.appendChild(svg);
